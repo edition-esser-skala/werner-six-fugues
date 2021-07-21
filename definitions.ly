@@ -23,8 +23,8 @@
   }
 
   system-system-spacing =
-    #'((basic-distance . 20)
-       (minimum-distance . 20)
+    #'((basic-distance . 22)
+       (minimum-distance . 22)
        (padding . -100)
        (stretchability . 0))
 
@@ -682,6 +682,15 @@ tocLabelLong = #(define-music-function
 
 
 tempoIa = \tempoMarkup "Larghetto"
+  tempoIb = \tempoMarkup "Vivace"
+  tempoIc = \tempoMarkup "Adagio"
+tempoIIa = \tempoMarkup "Largo"
+  tempoIIb = \tempoMarkup "Allegro"
+  tempoIIc = \tempoMarkup "Adagio"
+
+
+piuP   = \dynScriptPrefix "più"  "p" ##f
+piuPE  = \dynScriptPrefix "più"  "p" ##t
 
 
 \include "notes/vl1.ly"

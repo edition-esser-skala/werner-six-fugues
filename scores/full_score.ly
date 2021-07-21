@@ -4,6 +4,7 @@
 
 \paper {
   #(define (page-post-process layout pages) (ly:create-toc-file layout pages))
+  systems-per-page = #3
 }
 
 #(set-global-staff-size 15.87)
@@ -13,7 +14,7 @@
     \header {
       number = "I"
     }
-    \paper { indent = 3\cm }
+    \paper { indent = 2.5\cm }
     \tocSection "1" "Larghetto – Vivace – Adagio"
     \score {
       <<
@@ -35,13 +36,14 @@
           }
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "Violoncello" "(Cembalo)" }
+            % \transpose c c,
             \ICello
           }
           \new FiguredBass { \IBassFigures }
         >>
       >>
       \layout { }
-      \midi { \tempo 4 = 90 }
+      \midi { \tempo 4 = 80 }
     }
   }
 }
