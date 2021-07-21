@@ -82,6 +82,124 @@ IViolinoI = {
   }
 }
 
+IIViolinoI = {
+  \relative c' {
+    \clef treble
+    \key d \minor \time 3/4 \tempoIIa
+    r4 a'\f a
+    r f'\p f
+    r b\f b
+    r es,\p es
+    r g,\f g %5
+    r f\p f
+    r gis\f gis
+    a r r
+    a'\p r r
+    b!\f^\critnote r r %10
+    as\p r r
+    g\f r r
+    f\p r r
+    es\f r r
+    d\p r r %15
+    d2\f d4~
+    d d d
+    d d d
+    c\p c c
+    c c c %20
+    b!\piuP b b
+    b b b
+    a\pp a a
+    gis gis gis \noBreak
+    a2 r4\fermata \bar "||" %25
+    \time 4/4 \tempoIIb \newSpacingSection d2\fE gis4~ gis8.\trill fis32 gis \noBreak
+    a8 a, c4 fis~ fis8.\trill e32 fis
+    g!8 g, b!4 e!~ e8.\trill d32 e
+    f!8 e d e16 f e8 d cis d16 e
+    d8 c h16 c a h gis h' a gis a e d c %30
+    d8 f e16 f d e c4. h16 a
+    h8. cis16 dis e fis8 h,4 r16 e, fis g
+    a8. h16 cis d e8 a,4 r16 d, e f
+    g8. a16 h c d8 g, c4 b8
+    a16 f a'4 g8 f16 d f4 e8 %35
+    d e16 f e8 d cis a16 h cis d e f
+    d8 a d4. cis8 cis h16 cis
+    d8 a b a d4 d,
+    r8 e' e e a, a' a a
+    h,4 h' e, r %40
+    r2 g,
+    cis4~ cis8.\trill h32 cis d8 a d, f'
+    e h e, d' c e, a, es''
+    d a d, c' b d, g, d''
+    c g c, b' a c f4 %45
+    r8 d g4 r8 e a4~
+    a8 f b4. a8 g f~
+    f e16 d e8 g c, a'16 g a8 a
+    d, b16 c d b c d g,8 g'16 f g8 g
+    c, c'16 b a8 g f e16 f d8 g %50
+    e e16 f g4. f8 f4~
+    f8 e e4( es8) d d4~
+    d8 c c4~ c8 b b4~
+    b8 a a d g, a16 b a8 g
+    f d r4 r2 %55
+    R1*2
+    r2 d'
+    gis4~ gis8.\trill fis32 gis a8 a, e'4
+    fis~ fis8.\trill e32 fis g8 g, d'4 %60
+    e!~ e8.\trill d32 e f8 f, r4
+    r8 g16 a h c d8 e4 c'
+    r8 f,,16 g a b c8 d4 b'
+    r8 e,,16 fis gis a h8 c d16 e f8 e
+    a g f4. e16 d e8 fis %65
+    g g, g'4. f16 e f8 e
+    d e f g a e a4~
+    a8 c b a~ a g16 a b8 a
+    g b a g fis a, d, a''
+    g d g, f' es g, c, g'' %70
+    f c f, es' d e16 fis g4~
+    g8 f f e16 d e2~
+    e4 r8 es d2~
+    d4 r8 d c2~
+    c8 a f es' r b g f' %75
+    r c a g' r d b a'
+    r e c b' a a, a'4~
+    a8 b16 c b8 a g g, g'4~
+    g8 a16 b a8 g f f, f'4~
+    f8 g16 a g8 f e4 a, %80
+    cis~ cis8.\trill h32 cis d8 d, r f'
+    h, gis e d' cis a r cis
+    e4. e8 a,4 r8 a'
+    g e a, g' f d a f'
+    e h e, d' cis a d4~ %85
+    d cis \tempoIIc d8 d, d d
+    gis2~ gis8 h h h
+    d2 cis8 e e e
+    g2. f4
+    r8 f,\pp f f f8. g16 e4\trill %90
+    d2 r\fermata \bar "|." %91 finis
+  }
+}
+
+% ViolinoI = {
+%   \relative c' {
+%     \clef treble
+%
+%   }
+% }
+
+% ViolinoI = {
+%   \relative c' {
+%     \clef treble
+%
+%   }
+% }
+
+% ViolinoI = {
+%   \relative c' {
+%     \clef treble
+%
+%   }
+% }
+
 % ViolinoI = {
 %   \relative c' {
 %     \clef treble
