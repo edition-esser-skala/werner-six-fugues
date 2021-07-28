@@ -46,11 +46,81 @@
   %     \midi { \tempo 4 = 80 }
   %   }
   % }
+  % \bookpart {
+  %   \header {
+  %     number = "II"
+  %   }
+  %   \tocSection "2" "Largo – Allegro – Adagio"
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff \with { \smallGroupDistance } <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \IIViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \IIViolinoII
+  %           }
+  %         >>
+  %         \new Staff {
+  %           \set Staff.instrumentName = "vla"
+  %           \IIViola
+  %         }
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "vlc" "(cemb)" }
+  %           % \transpose c c,
+  %           \IICello
+  %         }
+  %         \new FiguredBass { \IIBassFigures }
+  %       >>
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 90 }
+  %   }
+  % }
+  % \bookpart {
+  %   \header {
+  %     number = "III"
+  %   }
+  %   \tocSection "3" "Adagio ma poco – Allegro"
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff \with { \smallGroupDistance } <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \IIIViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \IIIViolinoII
+  %           }
+  %         >>
+  %         \new Staff {
+  %           \set Staff.instrumentName = "vla"
+  %           \IIIViola
+  %         }
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "vlc" "(cemb)" }
+  %           % \transpose c c,
+  %           \IIICello
+  %         }
+  %         \new FiguredBass { \IIIBassFigures }
+  %       >>
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 60 }
+  %   }
+  % }
   \bookpart {
     \header {
-      number = "II"
+      number = "IV"
     }
-    \tocSection "2" "Largo – Allegro – Adagio"
+    \tocSection "4" "Grave – Allegro"
     \score {
       <<
         \new StaffGroup <<
@@ -58,27 +128,27 @@
             \set GrandStaff.instrumentName = "vl"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \IIViolinoI
+              \IVViolinoI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \IIViolinoII
+              \IVViolinoII
             }
           >>
           \new Staff {
             \set Staff.instrumentName = "vla"
-            \IIViola
+            \IVViola
           }
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "vlc" "(cemb)" }
             % \transpose c c,
-            \IICello
+            \IVCello
           }
-          \new FiguredBass { \IIBassFigures }
+          \new FiguredBass { \IVBassFigures }
         >>
       >>
       \layout { }
-      \midi { \tempo 4 = 90 }
+      \midi { \tempo 4 = 60 }
     }
   }
 }

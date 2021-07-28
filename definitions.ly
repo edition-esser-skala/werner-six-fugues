@@ -687,6 +687,10 @@ tempoIa = \tempoMarkup "Larghetto"
 tempoIIa = \tempoMarkup "Largo"
   tempoIIb = \tempoMarkup "Allegro"
   tempoIIc = \tempoMarkup "Adagio"
+tempoIIIa = \tempoMarkup "Adagio ma poco"
+  tempoIIIb = \tempoMarkup "Allegro"
+tempoIVa = \tempoMarkup "Grave"
+  tempoIVb = \tempoMarkup "Allegro"
 
 
 piuP   = \dynScriptPrefix "più"  "p" ##f

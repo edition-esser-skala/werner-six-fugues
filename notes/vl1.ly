@@ -179,19 +179,181 @@ IIViolinoI = {
   }
 }
 
-% ViolinoI = {
-%   \relative c' {
-%     \clef treble
-%
-%   }
-% }
+IIIViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoIIIa
+    r8 g''\f es( d)^\critnote r g,\p es( d)
+    r g\f es' c as4~ as16 f' d as
+    g4 es' d2
+    c b
+    c8 as f es d4\fermata r %5
+    d'8(\p es) a,( b) b,4. c'8
+    es,8. f16 f4\trill r8 b\f g( f)
+    r g\p es( d) r es\piuP c( b!)
+    r c'4\f b8 r as4 g8
+    r f4 f8 r es f es %10
+    d g( as) h( c) h( c) d(
+    es) d( es) fis( g) f es4
+    r es,\pp es4. es8 \noBreak
+    d1\fermata \bar "||"
+    \time 3/4 \tempoIIIb r4 es'\fE g \noBreak %15
+    c,2 r4
+    r d f
+    b,2 r4
+    r r8 es f16 es f es
+    d4 r8 f g16 f g f %20
+    es4 r8 es as16 g as g
+    f es f es d c d c b as b as
+    g8 as g4 f\trill
+    es8 es'16 d es8 es,16 f g as b8
+    c f16 e f8 f,16 g a b c8 %25
+    d g16 fis g8 g,16 a h c d8
+    es16 d es d es8 c g es
+    c4 r8 e' f16 es f es
+    d4 r8 fis g16 f g f
+    es4 r8 g as16 g as g %30
+    f4 r8 a b16 as b as
+    g4 r8 g, c es
+    d d, d'4~ d16 c d c
+    b a b a g8 es' b a
+    g g'16 fis g8 g,16 a b c d8 %35
+    es16 d es d c4 r
+    r8 f16 e f8 f,16 g a b c8
+    d16 c d c b4 r
+    r r8 b es16 d es d
+    c4 r8 c f16 es f es %40
+    d4 r8 d g16 f g f
+    es4 r8 es as16 g as g
+    f4 r8 g~ g16 f g f
+    es4 r8 f~ f16 es f es
+    d4 r8 es~ es16 d es d %45
+    c8 d16 es f8 g d c
+    b b'16 a b8 b,16 c d es f8
+    g4 d, r
+    r8 es'16 d es8 es,16 f g as b8
+    c4 g, r %50
+    r8 f''16 e f8 f,16 g a! b c8
+    d4 f, r
+    r8 es'16 d es8 es,16 f g as b8
+    c f16 e f8 f,16 g a b c8
+    d g16 fis g8 g,16 a h c d8 %55
+    es c, r es' g es
+    c16( h) c8 r c f16 es f es
+    d( c) d8 r d, g16 f g f
+    es d es d c8 es16 f es8 d
+    c4 r r %60
+    r8 as' es4 d\trill
+    c2 r4\fermata \bar "|." %62 finis
+  }
+}
 
-% ViolinoI = {
-%   \relative c' {
-%     \clef treble
-%
-%   }
-% }
+IVViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoIVa
+    R1
+    c'2\fE h
+    as' g
+    r8 c, es fis g g as h
+    c c, c' b as as, as' g %5
+    f2~ f8 f\p es es
+    es es d d d d c c
+    cis cis cis cis d a b g
+    a2 g4 r
+    r2 r4 g'\f %10
+    fis2 es'!
+    d~ d8 b16 c d4~
+    d8 d c b a4 b~
+    b a b8 b, d e
+    f f, g a b4 es~ %15
+    es8 d d16 e f8~ f16 f g d e4\trill
+    f8 f, c' d es4. d16 c
+    b4. c8 d a d c
+    h4 c4. c8 b b
+    a2 r8 a\p a' a %20
+    f4 fis8.(\trill e32 fis) g4 d8.(\trill c32 d)
+    es2 r8 f,! f' f
+    d2 r8 es, es' es
+    c2 b
+    r8 b b' b g4 c~ %25
+    c8 c b b a2\trill
+    g8 g,[\f b c] d d, a' h
+    c4 c, r2
+    c' h
+    as' g %30
+    r8 c, es fis g g as h
+    c c, c' b as2~
+    as8 as\p g g g g f f
+    f f es es des f as c,
+    h4 r g'\f r %35
+    c, r c,8\p c c c
+    h4 c2 h4
+    c8 c[\pp c c] as'2~
+    as4 g2 fis4 \noBreak
+    g1\fermata \bar "||" %40
+    \tempoIVb r8 g'\f g g as fis fis fis \noBreak
+    g es es es f d g g,
+    c16 d es d es c es f g fis g a! g b a g
+    fis d e fis g f es d es d c b a d c d
+    b8 g r16 g' as b c, b' as g as f g as %45
+    b, as' g f g es f g as, g' f es f d es f
+    g, f' es d es8 c~ c d16 c h8. h16
+    c h c d c es d c h g a h c b? as g
+    as g f es d g f g es8 c r4
+    R1 %50
+    r2 r8 g'' g g
+    e4 f d es
+    c d h c16 c d es
+    f, es' d c d b c d es, d' c b c a! b c
+    d, c' b a b c b c d8 es a,4\trill %55
+    g r r2
+    r8 g' g g as fis fis fis
+    g es es es f d g g,
+    c d16 e f2 e4
+    f4. f8 es16 f es f g8 d %60
+    c16 h c8~ c16 es d c h8 d g16 as f g
+    es8 g c16 d b! c as b g as f g es f
+    d8 f b16 c as b g as f g es f d es
+    c8 es as16 b g as f g es f d es c d
+    b8.( c32 d) es4. d16 c d4\trill %65
+    es8 c' c c d, b' b b
+    c,16 as' g as d, b' as b g8 es r4
+    R1
+    r2 r8 f f f
+    f es16 d es4. d16 c d4~ %70
+    d8 c16 h c4~ c16 d c b as g f as
+    d,8 g16 a h g a h c h c d c es d c
+    h g a h c4. d16 c b4~
+    b8 c16 b as4. b16 as g4~
+    g8 a16 g fis8. fis16 g8 d' d d %75
+    es! c c c d b b b
+    c a a a b16 a g fis g a b c
+    d e f8 e8 d cis16 a h? cis d c b? a
+    b a g f e a g a f8 d r f'~
+    f g, r es'~ es f, r d'~ %80
+    d es, r c'~ c d, r b''~
+    b c, r a'~ a b, r g'~
+    g a, r f'~ f g, r4
+    r8 g' g g as fis fis fis
+    g es es es f d d d %85
+    e4 f2 es4~
+    es d c~ c16 f es f
+    d es c d es4~ es8 f16 c d4~
+    d8 es16 h c4~ c8 d16 a h4\trill
+    c16 h c8~ c16 es d c h8 g' g g %90
+    as fis fis fis g es es es
+    f d d d es g, r g'
+    f g, es' g, d' g, es'4~
+    es8 d4 c8~ c h16 c d es f d
+    es1~\p %95
+    es4 es,~ es8 es es es
+    d1\fermata
+    r8 g\f g g as fis fis fis
+    g es es es f d g g,
+    c4 r r2\fermata \bar "|." %100 finis
+  }
+}
 
 % ViolinoI = {
 %   \relative c' {
