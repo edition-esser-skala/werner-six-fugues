@@ -116,11 +116,46 @@
   %     \midi { \tempo 4 = 60 }
   %   }
   % }
+  % \bookpart {
+  %   \header {
+  %     number = "IV"
+  %   }
+  %   \tocSection "4" "Grave – Allegro"
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff \with { \smallGroupDistance } <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \IVViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \IVViolinoII
+  %           }
+  %         >>
+  %         \new Staff {
+  %           \set Staff.instrumentName = "vla"
+  %           \IVViola
+  %         }
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "vlc" "(cemb)" }
+  %           % \transpose c c,
+  %           \IVCello
+  %         }
+  %         \new FiguredBass { \IVBassFigures }
+  %       >>
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 60 }
+  %   }
+  % }
   \bookpart {
     \header {
-      number = "IV"
+      number = "V"
     }
-    \tocSection "4" "Grave – Allegro"
+    \tocSection "5" "Adagio ma poco – Allegro – Adagio"
     \score {
       <<
         \new StaffGroup <<
@@ -128,23 +163,23 @@
             \set GrandStaff.instrumentName = "vl"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \IVViolinoI
+              \VViolinoI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \IVViolinoII
+              \VViolinoII
             }
           >>
           \new Staff {
             \set Staff.instrumentName = "vla"
-            \IVViola
+            \VViola
           }
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "vlc" "(cemb)" }
             % \transpose c c,
-            \IVCello
+            \VCello
           }
-          \new FiguredBass { \IVBassFigures }
+          \new FiguredBass { \VBassFigures }
         >>
       >>
       \layout { }
