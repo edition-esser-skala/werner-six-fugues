@@ -151,11 +151,46 @@
   %     \midi { \tempo 4 = 60 }
   %   }
   % }
+  % \bookpart {
+  %   \header {
+  %     number = "V"
+  %   }
+  %   \tocSection "5" "Adagio ma poco – Allegro – Adagio"
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff \with { \smallGroupDistance } <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \VViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \VViolinoII
+  %           }
+  %         >>
+  %         \new Staff {
+  %           \set Staff.instrumentName = "vla"
+  %           \VViola
+  %         }
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "vlc" "(cemb)" }
+  %           % \transpose c c,
+  %           \VCello
+  %         }
+  %         \new FiguredBass { \VBassFigures }
+  %       >>
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 60 }
+  %   }
+  % }
   \bookpart {
     \header {
-      number = "V"
+      number = "VI"
     }
-    \tocSection "5" "Adagio ma poco – Allegro – Adagio"
+    \tocSection "6" "Adagio ma poco – Vivace"
     \score {
       <<
         \new StaffGroup <<
@@ -163,23 +198,23 @@
             \set GrandStaff.instrumentName = "vl"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \VViolinoI
+              \VIViolinoI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \VViolinoII
+              \VIViolinoII
             }
           >>
           \new Staff {
             \set Staff.instrumentName = "vla"
-            \VViola
+            \VIViola
           }
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "vlc" "(cemb)" }
             % \transpose c c,
-            \VCello
+            \VICello
           }
-          \new FiguredBass { \VBassFigures }
+          \new FiguredBass { \VIBassFigures }
         >>
       >>
       \layout { }
