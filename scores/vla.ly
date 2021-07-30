@@ -38,7 +38,7 @@
 \layout {
   \context {
     \Staff
-    instrumentName = "vl 1"
+    instrumentName = "vla"
   }
 }
 
@@ -47,12 +47,12 @@
     \header {
       number = "I"
     }
-    \paper { indent = 2\cm page-count = #2 }
+    \paper { indent = 2\cm }
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Violino I"
-          \IViolinoI
+          \set Staff.instrumentName = "Viola"
+          \IViola
         }
       >>
     }
@@ -61,10 +61,9 @@
     \header {
       number = "II"
     }
-    \paper { page-count = #2 }
     \score {
       <<
-        \new Staff { \IIViolinoI }
+        \new Staff { \IIViola }
       >>
     }
   }
@@ -74,7 +73,7 @@
     }
     \score {
       <<
-        \new Staff { \IIIViolinoI }
+        \new Staff { \IIIViola }
       >>
     }
   }
@@ -84,7 +83,7 @@
     }
     \score {
       <<
-        \new Staff { \IVViolinoI }
+        \new Staff { \IVViola }
       >>
     }
   }
@@ -94,7 +93,7 @@
     }
     \score {
       <<
-        \new Staff { \VViolinoI }
+        \new Staff { \VViola }
       >>
     }
   }
@@ -104,7 +103,7 @@
     }
     \score {
       <<
-        \new Staff { \VIViolinoI }
+        \new Staff { \VIViola }
       >>
     }
   }

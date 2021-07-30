@@ -38,7 +38,7 @@
 \layout {
   \context {
     \Staff
-    instrumentName = "vl 1"
+    instrumentName = "org"
   }
 }
 
@@ -47,13 +47,14 @@
     \header {
       number = "I"
     }
-    \paper { indent = 2\cm page-count = #2 }
+    \paper { indent = 2\cm }
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Violino I"
-          \IViolinoI
+          \set Staff.instrumentName = "Cembalo"
+          \ICello
         }
+        \new FiguredBass { \IBassFigures }
       >>
     }
   }
@@ -61,10 +62,10 @@
     \header {
       number = "II"
     }
-    \paper { page-count = #2 }
     \score {
       <<
-        \new Staff { \IIViolinoI }
+        \new Staff { \IICello }
+        \new FiguredBass { \IIBassFigures }
       >>
     }
   }
@@ -74,7 +75,8 @@
     }
     \score {
       <<
-        \new Staff { \IIIViolinoI }
+        \new Staff { \IIICello }
+        \new FiguredBass { \IIIBassFigures }
       >>
     }
   }
@@ -84,7 +86,8 @@
     }
     \score {
       <<
-        \new Staff { \IVViolinoI }
+        \new Staff { \IVCello }
+        \new FiguredBass { \IVBassFigures }
       >>
     }
   }
@@ -94,7 +97,8 @@
     }
     \score {
       <<
-        \new Staff { \VViolinoI }
+        \new Staff { \VCello }
+        \new FiguredBass { \VBassFigures }
       >>
     }
   }
@@ -104,7 +108,8 @@
     }
     \score {
       <<
-        \new Staff { \VIViolinoI }
+        \new Staff { \VICello }
+        \new FiguredBass { \VIBassFigures }
       >>
     }
   }

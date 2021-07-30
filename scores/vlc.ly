@@ -38,36 +38,72 @@
 \layout {
   \context {
     \Staff
-    instrumentName = "org"
+    instrumentName = "vlc"
   }
 }
 
 \book {
   \bookpart {
     \header {
-      number = "1"
-      title = "F I R S T"
+      number = "I"
     }
-    \paper { indent = 2\cm }
+    \paper { indent = 2.5\cm }
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Organo"
-          \Organo
+          \set Staff.instrumentName = "Violoncello"
+          \ICello
         }
-        \new FiguredBass { \BassFigures }
       >>
     }
   }
   \bookpart {
     \header {
-      number = "2"
-      title = "S E C O N D"
+      number = "II"
     }
     \score {
       <<
-        \new Staff { \Organo }
-        \new FiguredBass { \BassFigures }
+        \new Staff { \IICello }
+      >>
+    }
+  }
+  \bookpart {
+    \header {
+      number = "III"
+    }
+    \score {
+      <<
+        \new Staff { \IIICello }
+      >>
+    }
+  }
+  \bookpart {
+    \header {
+      number = "IV"
+    }
+    \score {
+      <<
+        \new Staff { \IVCello }
+      >>
+    }
+  }
+  \bookpart {
+    \header {
+      number = "V"
+    }
+    \score {
+      <<
+        \new Staff { \VCello }
+      >>
+    }
+  }
+  \bookpart {
+    \header {
+      number = "VI"
+    }
+    \score {
+      <<
+        \new Staff { \VICello }
       >>
     }
   }
