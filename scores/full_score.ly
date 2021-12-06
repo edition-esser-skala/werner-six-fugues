@@ -1,21 +1,19 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
+\include "score_settings/full-score.ly"
 
 \paper {
-  #(define (page-post-process layout pages) (ly:create-toc-file layout pages))
+  system-system-spacing.basic-distance = #22
+  system-system-spacing.minimum-distance = #22
   systems-per-page = #3
 }
 
-#(set-global-staff-size 15.87)
-
 \book {
   \bookpart {
-    \header {
-      number = "I"
-    }
-    \paper { indent = 2.5\cm }
-    \tocSection "1" "Larghetto – Vivace – Adagio"
+    \section "1" "Larghetto – Vivace – Adagio"
+    \addTocEntry
+    \paper { indent = 2\cm }
     \score {
       <<
         \new StaffGroup <<
@@ -35,7 +33,7 @@
             \IViola
           }
           \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "Violoncello" "(Cembalo)" }
+            \set Staff.instrumentName = "Violoncello"
             % \transpose c c,
             \ICello
           }
@@ -47,10 +45,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "II"
-    }
-    \tocSection "2" "Largo – Allegro – Adagio"
+    \section "2" "Largo – Allegro – Adagio"
+    \addTocEntry
     \score {
       <<
         \new StaffGroup <<
@@ -70,7 +66,7 @@
             \IIViola
           }
           \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "vlc" "(cemb)" }
+            \set Staff.instrumentName = "vlc"
             % \transpose c c,
             \IICello
           }
@@ -82,10 +78,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "III"
-    }
-    \tocSection "3" "Adagio ma poco – Allegro"
+    \section "3" "Adagio ma poco – Allegro"
+    \addTocEntry
     \score {
       <<
         \new StaffGroup <<
@@ -105,7 +99,7 @@
             \IIIViola
           }
           \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "vlc" "(cemb)" }
+            \set Staff.instrumentName = "vlc"
             % \transpose c c,
             \IIICello
           }
@@ -117,10 +111,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "IV"
-    }
-    \tocSection "4" "Grave – Allegro"
+    \section "4" "Grave – Allegro"
+    \addTocEntry
     \score {
       <<
         \new StaffGroup <<
@@ -140,7 +132,7 @@
             \IVViola
           }
           \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "vlc" "(cemb)" }
+            \set Staff.instrumentName = "vlc"
             % \transpose c c,
             \IVCello
           }
@@ -152,10 +144,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "V"
-    }
-    \tocSection "5" "Adagio ma poco – Allegro – Adagio"
+    \section "5" "Adagio ma poco – Allegro – Adagio"
+    \addTocEntry
     \score {
       <<
         \new StaffGroup <<
@@ -175,7 +165,7 @@
             \VViola
           }
           \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "vlc" "(cemb)" }
+            \set Staff.instrumentName = "vlc"
             % \transpose c c,
             \VCello
           }
@@ -187,10 +177,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "VI"
-    }
-    \tocSection "6" "Adagio ma poco – Vivace"
+    \section "6" "Adagio ma poco – Vivace"
+    \addTocEntry
     \score {
       <<
         \new StaffGroup <<
@@ -210,7 +198,7 @@
             \VIViola
           }
           \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "vlc" "(cemb)" }
+            \set Staff.instrumentName = "vlc"
             % \transpose c c,
             \VICello
           }

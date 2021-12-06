@@ -1,16 +1,19 @@
-composer: Werner, Gregor Joseph
-title: Six Fugues
-id: (US-DMu 269477)
+composer:
+  last: Werner
+  first: Gregor Joseph
+title: Six fugues
+subtitle: arranged for string quartet by Joseph Haydn
 genre: misc
-scoring: 2 vl, vla, vlc, (cemb)
+scoring: 2 vl, vla, vlc, [bc]
+license: cc-by-sa-4.0
 sources:
-  1:
+  C1:
     siglum: US-DMu
     shelfmark: 269477
-    type: print (Artaria, Vienna)
     date: 1804
     rism: 990068295
     url: https://idn.duke.edu/ark:/87924/r3qz22w7k
-github: werner-six-fugues
+    license: public domain
+    principal: true
+    notes: Artaria, Vienna
 imslp: 6_Fugues_(Werner,_Gregor_Joseph)
-notes:

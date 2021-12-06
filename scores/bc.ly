@@ -1,30 +1,31 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
-#(define option-instrument-name "vl 1")
+#(define option-instrument-name "bc")
 \include "score_settings/one-staff.ly"
 
 \book {
   \bookpart {
     \section "1" "Larghetto – Vivace – Adagio"
     \addTocEntry
-    \paper { indent = 2\cm page-count = #2 }
+    \paper { indent = 2\cm }
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Violino I"
-          \IViolinoI
+          \set Staff.instrumentName = \markup \center-column { "Basso" "continuo" }
+          \ICello
         }
+        \new FiguredBass { \IBassFigures }
       >>
     }
   }
   \bookpart {
     \section "2" "Largo – Allegro – Adagio"
     \addTocEntry
-    \paper { page-count = #2 }
     \score {
       <<
-        \new Staff { \IIViolinoI }
+        \new Staff { \IICello }
+        \new FiguredBass { \IIBassFigures }
       >>
     }
   }
@@ -33,7 +34,8 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \IIIViolinoI }
+        \new Staff { \IIICello }
+        \new FiguredBass { \IIIBassFigures }
       >>
     }
   }
@@ -42,7 +44,8 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \IVViolinoI }
+        \new Staff { \IVCello }
+        \new FiguredBass { \IVBassFigures }
       >>
     }
   }
@@ -51,7 +54,8 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \VViolinoI }
+        \new Staff { \VCello }
+        \new FiguredBass { \VBassFigures }
       >>
     }
   }
@@ -60,7 +64,8 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \VIViolinoI }
+        \new Staff { \VICello }
+        \new FiguredBass { \VIBassFigures }
       >>
     }
   }
